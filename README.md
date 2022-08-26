@@ -1,5 +1,10 @@
 # Dashboard React from Create React App with D3
 
+Vercel for this project and live now with react, gsap, tailwind, daisy... now for the dashboard with crazy cool charts... I want a full example set with crazy animations and live and EASY!
+
+[LIVE DEMO](https://dashboard-react-alpha.vercel.app/)
+
+
 Use the deploy link below to clone and deploy this project...
 
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/caicodes/dashboard-react)
