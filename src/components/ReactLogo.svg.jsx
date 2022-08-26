@@ -1,6 +1,8 @@
 import React from "react";
+import gsap from "gsap";
 
 const ReactLogo = () => {
+  gsap.to("svg", { rotate: 720 });
   return (
     <>
       <svg
