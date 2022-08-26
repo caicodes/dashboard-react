@@ -1,8 +1,11 @@
-import React from "react";
+import React, { useEffect } from "react";
 import gsap from "gsap";
 
 const ReactLogo = () => {
-  gsap.to("svg", { rotate: 450 });
+  useEffect(() => {
+    gsap.to("svg", { rotate: 450 });
+  }, []);
+
   return (
     <>
       <svg
