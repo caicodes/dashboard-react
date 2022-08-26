@@ -1,9 +1,10 @@
 # Dashboard React from Create React App with D3
 
-Attempting my own deploy button... 
-
+Use the deploy link below to clone and deploy this project...
 
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/caicodes/dashboard-react)
+
+## keeping for now, mainly for future testing on this project
 
 
 > original stuff below.. thinking of including tests... no other projects have them so far... for the portfolio, dashboard and testing... nice!
