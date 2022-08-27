@@ -8,6 +8,7 @@ import CandleStickChart from "./components/charts/CandleStickChart"
 import MultipleYAxisChart from "./components/charts/MultipleYAxisChart"
 import LineDataChart from "./components/charts/LineDataLabels"
 import Dashboard from "./components/Dashboard"
+import ScatterChart from "./components/charts/ScatterChart"
 
 function App() {
   return (
@@ -23,8 +24,10 @@ function App() {
       </header>
       <div>
         <Dashboard />
+        <ScatterChart />
       </div>
-      <div className="grid grid-cols-3">
+
+      <div className="grid grid-cols-3 p-8">
         <DonutChart />
         <LineChart />
         <AreaChart />

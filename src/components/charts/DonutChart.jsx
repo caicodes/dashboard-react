@@ -10,6 +10,12 @@ class DonutChart extends Component {
         tooltip: {
           theme: "dark",
         },
+
+        legend: {
+          labels: {
+            colors: "var(--chart-colors-labels)",
+          },
+        },
       },
       series: [44, 55, 41, 17, 15],
       labels: ["A", "B", "C", "D", "E"],

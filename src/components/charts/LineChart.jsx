@@ -10,6 +10,7 @@ class LineChart extends Component {
         chart: {
           id: "basic-bar",
         },
+
         tooltip: {
           theme: "dark",
         },
