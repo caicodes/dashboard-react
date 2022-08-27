@@ -1,5 +1,11 @@
 import ReactLogo from "./app/ReactLogo.svg"
 
+import AreaChart from "./components/charts/AreaChart"
+import DonutChart from "./components/charts/DonutChart"
+import LineChart from "./components/charts/LineChart"
+import SparklinesDemoChart from "./components/charts/SparklinesDemo"
+import CandleStickChart from "./components/charts/CandleStickChart"
+
 function App() {
   return (
     <div className="App min-h-screen text-center text-2xl ">
@@ -12,6 +18,11 @@ function App() {
         </p>
         <button className="btn btn-xl mt-8">hello daisyui</button>
       </header>
+      <DonutChart />
+      <LineChart />
+      <AreaChart />
+      <SparklinesDemoChart />
+      <CandleStickChart />
     </div>
   )
 }

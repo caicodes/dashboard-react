@@ -1,16 +1,16 @@
-import React, { useEffect } from "react";
-import gsap from "gsap";
+import React, { useEffect } from "react"
+import gsap from "gsap"
 
 const ReactLogo = () => {
   useEffect(() => {
-    gsap.to("svg", { rotate: 450 });
-  }, []);
+    gsap.to(".react-logo", { rotate: 450 })
+  }, [])
 
   return (
     <>
       <svg
         xmlns="http://www.w3.org/2000/svg"
-        className="w-96 h-96 mx-auto"
+        className="w-96 h-96 mx-auto react-logo"
         viewBox="0 0 841.9 595.3"
       >
         <g fill="currentColor">
@@ -20,7 +20,7 @@ const ReactLogo = () => {
         </g>
       </svg>
     </>
-  );
-};
+  )
+}
 
-export default ReactLogo;
+export default ReactLogo
