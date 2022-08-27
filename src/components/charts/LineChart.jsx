@@ -10,8 +10,23 @@ class LineChart extends Component {
         chart: {
           id: "basic-bar",
         },
+        tooltip: {
+          theme: "dark",
+        },
+        yaxis: {
+          labels: {
+            style: {
+              colors: "rgba(255,255,255,.4)",
+            },
+          },
+        },
         xaxis: {
           categories: [1991, 1992, 1993, 1994, 1995, 1996, 1997, 1998],
+          labels: {
+            style: {
+              colors: "rgba(255,255,255,.4)",
+            },
+          },
         },
       },
       series: [

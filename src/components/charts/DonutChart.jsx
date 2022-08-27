@@ -6,7 +6,11 @@ class DonutChart extends Component {
     super(props)
 
     this.state = {
-      options: {},
+      options: {
+        tooltip: {
+          theme: "dark",
+        },
+      },
       series: [44, 55, 41, 17, 15],
       labels: ["A", "B", "C", "D", "E"],
     }

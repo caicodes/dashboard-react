@@ -5,6 +5,9 @@ import DonutChart from "./components/charts/DonutChart"
 import LineChart from "./components/charts/LineChart"
 import SparklinesDemoChart from "./components/charts/SparklinesDemo"
 import CandleStickChart from "./components/charts/CandleStickChart"
+import MultipleYAxisChart from "./components/charts/MultipleYAxisChart"
+import LineDataChart from "./components/charts/LineDataLabels"
+import Dashboard from "./components/Dashboard"
 
 function App() {
   return (
@@ -18,11 +21,18 @@ function App() {
         </p>
         <button className="btn btn-xl mt-8">hello daisyui</button>
       </header>
-      <DonutChart />
-      <LineChart />
-      <AreaChart />
-      <SparklinesDemoChart />
-      <CandleStickChart />
+      <div>
+        <Dashboard />
+      </div>
+      <div className="grid grid-cols-3">
+        <DonutChart />
+        <LineChart />
+        <AreaChart />
+        <SparklinesDemoChart />
+        <CandleStickChart />
+        <MultipleYAxisChart />
+        <LineDataChart />
+      </div>
     </div>
   )
 }

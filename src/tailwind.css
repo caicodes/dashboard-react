@@ -1,3 +1,19 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+  --chart-colors-labels: rgba(255, 255, 255, 0.3);
+  --chart-colors-menu-bg: rgba(0, 0, 0, 0.6);
+  --chart-colors-menu-border: transparent;
+  --chart-colors-accent: rgba(0, 0, 0, 0.6);
+  --chart-colors-menu-item-hover: rgba(0, 0, 0, 0.8);
+}
+
+.apexcharts-menu-open {
+  background: var(--chart-colors-menu-bg) !important;
+  border-color: var(--chart-colors-menu-border) !important;
+}
+.apexcharts-menu-item:hover {
+  background: var(--chart-colors-menu-item-hover) !important;
+}

@@ -254,14 +254,20 @@ class CandleStickChart extends Component {
           ],
         },
       ],
+
       options: {
         chart: {
           height: 350,
           type: "candlestick",
+          theme: "dark",
         },
+
         title: {
           text: "CandleStick Chart - Category X-axis",
           align: "left",
+          style: {
+            color: "white",
+          },
         },
         annotations: {
           xaxis: [
@@ -284,6 +290,7 @@ class CandleStickChart extends Component {
         },
         tooltip: {
           enabled: true,
+          theme: "dark",
         },
         xaxis: {
           type: "category",
@@ -291,11 +298,20 @@ class CandleStickChart extends Component {
             formatter: function (val) {
               return dayjs(val).format("MMM DD HH:mm")
             },
+            style: {
+              colors: "var(--chart-colors-labels)",
+            },
           },
         },
         yaxis: {
           tooltip: {
             enabled: true,
+            theme: "dark",
+          },
+          labels: {
+            style: {
+              colors: "rgba(255,255,255,.4)",
+            },
           },
         },
       },

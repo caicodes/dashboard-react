@@ -19,6 +19,7 @@ class SparklinesDemoChart extends Component {
             enabled: true,
           },
         },
+
         stroke: {
           curve: "straight",
         },
@@ -28,12 +29,13 @@ class SparklinesDemoChart extends Component {
         yaxis: {
           min: 0,
         },
-        colors: ["#DCE6EC"],
+        colors: ["rebeccapurple"],
         title: {
           text: "$424,652",
           offsetX: 0,
           style: {
             fontSize: "24px",
+            color: "white",
           },
         },
         subtitle: {
@@ -41,7 +43,11 @@ class SparklinesDemoChart extends Component {
           offsetX: 0,
           style: {
             fontSize: "14px",
+            color: "white",
           },
+        },
+        tooltip: {
+          theme: "dark",
         },
       },
 
@@ -58,6 +64,9 @@ class SparklinesDemoChart extends Component {
             enabled: true,
           },
         },
+        tooltip: {
+          theme: "dark",
+        },
         stroke: {
           curve: "straight",
         },
@@ -67,12 +76,13 @@ class SparklinesDemoChart extends Component {
         yaxis: {
           min: 0,
         },
-        colors: ["#DCE6EC"],
+        colors: ["hotpink"],
         title: {
           text: "$235,312",
           offsetX: 0,
           style: {
             fontSize: "24px",
+            color: "white",
           },
         },
         subtitle: {
@@ -80,6 +90,7 @@ class SparklinesDemoChart extends Component {
           offsetX: 0,
           style: {
             fontSize: "14px",
+            color: "white",
           },
         },
       },
@@ -116,6 +127,7 @@ class SparklinesDemoChart extends Component {
           offsetX: 0,
           style: {
             fontSize: "24px",
+            color: "white",
           },
         },
         subtitle: {
@@ -123,6 +135,7 @@ class SparklinesDemoChart extends Component {
           offsetX: 0,
           style: {
             fontSize: "14px",
+            color: "white",
           },
         },
       },
@@ -158,6 +171,7 @@ class SparklinesDemoChart extends Component {
           marker: {
             show: false,
           },
+          theme: "dark",
         },
       },
 
@@ -192,6 +206,7 @@ class SparklinesDemoChart extends Component {
           marker: {
             show: false,
           },
+          theme: "dark",
         },
       },
 
@@ -212,6 +227,7 @@ class SparklinesDemoChart extends Component {
           fixed: {
             enabled: false,
           },
+          theme: "dark",
         },
       },
 
@@ -232,6 +248,7 @@ class SparklinesDemoChart extends Component {
           fixed: {
             enabled: false,
           },
+          theme: "dark",
         },
       },
 
@@ -277,6 +294,7 @@ class SparklinesDemoChart extends Component {
           marker: {
             show: false,
           },
+          theme: "dark",
         },
       },
 
@@ -322,6 +340,7 @@ class SparklinesDemoChart extends Component {
           marker: {
             show: false,
           },
+          theme: "dark",
         },
       },
 
@@ -420,7 +439,6 @@ class SparklinesDemoChart extends Component {
             </div>
           </div>
         </div>
-
         <div class="row">
           <table>
             <thead>

@@ -19,15 +19,26 @@ class AreaChart extends Component {
         },
       ],
       options: {
+        legend: {
+          labels: {
+            colors: "var(--chart-colors-labels)",
+          },
+        },
         chart: {
           height: 350,
           type: "line",
+        },
+        tooltip: {
+          theme: "dark",
         },
         stroke: {
           width: [0, 4],
         },
         title: {
           text: "Traffic Sources",
+          style: {
+            color: "white",
+          },
         },
         dataLabels: {
           enabled: true,
@@ -49,17 +60,35 @@ class AreaChart extends Component {
         ],
         xaxis: {
           type: "datetime",
+          labels: {
+            style: {
+              colors: "var(--chart-colors-labels)",
+            },
+          },
         },
         yaxis: [
           {
+            labels: {
+              style: {
+                colors: "var(--chart-colors-labels)",
+              },
+            },
+          },
+          {
             title: {
               text: "Website Blog",
+              style: {
+                color: "white",
+              },
             },
           },
           {
             opposite: true,
             title: {
               text: "Social Media",
+              style: {
+                color: "white",
+              },
             },
           },
         ],
@@ -73,15 +102,8 @@ class AreaChart extends Component {
         <Chart
           options={this.state.options}
           series={this.state.series}
-          type="bar"
-          width="500"
-        />
-
-        <Chart
-          options={this.state.options}
-          series={this.state.series}
-          type="line"
-          width="500"
+          type="area"
+          height={350}
         />
       </div>
     )
