@@ -28,6 +28,7 @@ yarn-error.log*
 .env.build
 .vercel
 
+# Artasce Creative / Cai Toy
 archive
 .firebase
 modules

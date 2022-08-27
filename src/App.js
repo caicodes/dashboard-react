@@ -1,4 +1,4 @@
-import ReactLogo from "./components/ReactLogo.svg";
+import ReactLogo from "./app/ReactLogo.svg"
 
 function App() {
   return (
@@ -13,7 +13,7 @@ function App() {
         <button className="btn btn-xl mt-8">hello daisyui</button>
       </header>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App

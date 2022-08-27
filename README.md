@@ -4,7 +4,6 @@ Vercel for this project and live now with react, gsap, tailwind, daisy... now fo
 
 [LIVE DEMO](https://dashboard-react-alpha.vercel.app/)
 
-
 Use the deploy link below to clone and deploy this project...
 
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/caicodes/dashboard-react)
