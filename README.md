@@ -1,3 +1,5 @@
+<img src='./project/status-screenshot.png' />
+
 # Dashboard React from Create React App with D3
 
 Vercel for this project and live now with react, gsap, tailwind, daisy... now for the dashboard with crazy cool charts... I want a full example set with crazy animations and live and EASY!

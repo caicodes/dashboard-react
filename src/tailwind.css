@@ -19,3 +19,7 @@
 .apexcharts-menu-item:hover {
   background: var(--chart-colors-menu-item-hover) !important;
 }
+
+.menu-link {
+  @apply hover:bg-primary/20 hover:text-primary-focus;
+}

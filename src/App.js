@@ -1,42 +1,39 @@
-import ReactLogo from "./app/ReactLogo.svg"
-
-import AreaChart from "./components/charts/AreaChart"
-import DonutChart from "./components/charts/DonutChart"
-import LineChart from "./components/charts/LineChart"
-import SparklinesDemoChart from "./components/charts/SparklinesDemo"
-import CandleStickChart from "./components/charts/CandleStickChart"
-import MultipleYAxisChart from "./components/charts/MultipleYAxisChart"
-import LineDataChart from "./components/charts/LineDataLabels"
-import Dashboard from "./components/Dashboard"
-import ScatterChart from "./components/charts/ScatterChart"
 import AreaChartAlt from "./components/charts/AreaChartAlt"
+import AreaChart from "./components/charts/AreaChart"
+import SparklinesDemoChart from "./components/charts/SparklinesDemo"
+import Menu from "./components/app/Menu"
 
 function App() {
   return (
-    <div className="App min-h-screen text-center text-2xl ">
-      <header className="App-header text-primary animate-pulse">
-        <ReactLogo />
-        <p className="App-msg mx-auto w-96 ">
-          dashboard delightfulness in dark only mode... with D3, charts, and
-          whatever I can get to have dynamic bad ass dashboards live in my
-          portfolio... now!
-        </p>
-        <button className="btn btn-xl mt-8">hello daisyui</button>
-      </header>
-      <div>
-        <AreaChartAlt />
-        <Dashboard />
-        <ScatterChart />
+    <div className="fixed h-screen grid grid-cols-4 overflow-hidden">
+      <div className="bg-base-300 col-span-1 hidden md:block overflow-y-scroll ">
+        <Menu />
       </div>
+      <div className="m-8 col-span-4 md:col-span-3 overflow-y-scroll">
+        <h2 className="bg-black/20 p-5 mb-4 uppercase text-sm text-accent">
+          comparison sales
+        </h2>
 
-      <div className="grid grid-cols-3 p-8">
-        <DonutChart />
-        <LineChart />
-        <AreaChart />
         <SparklinesDemoChart />
-        <CandleStickChart />
-        <MultipleYAxisChart />
-        <LineDataChart />
+        <h2 className="bg-black/20 p-5 my-8 uppercase text-sm text-accent">
+          comparison sales
+        </h2>
+
+        <AreaChartAlt />
+        <div className="flex gap-4 p-8">
+          <div className="w-2/3">
+            <h2 className="bg-black/20 p-5 mb-4 uppercase text-sm text-accent">
+              marketing channels
+            </h2>
+            <AreaChart />
+          </div>
+          <div className="w-2/3">
+            <h2 className="bg-black/20 p-5 mb-4 uppercase text-sm text-accent">
+              pipeline sales
+            </h2>
+            <AreaChartAlt />
+          </div>
+        </div>
       </div>
     </div>
   )
