@@ -8,6 +8,8 @@
   --chart-colors-menu-border: transparent;
   --chart-colors-accent: rgba(0, 0, 0, 0.6);
   --chart-colors-menu-item-hover: rgba(0, 0, 0, 0.8);
+  --chart-colors-lines-accent: orange;
+  --chart-colors-lines-accent2: lime;
 }
 
 .apexcharts-menu-open {

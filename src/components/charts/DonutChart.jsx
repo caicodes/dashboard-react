@@ -10,7 +10,9 @@ class DonutChart extends Component {
         tooltip: {
           theme: "dark",
         },
-
+        stroke: {
+          colors: "var(--chart-colors-accent)",
+        },
         legend: {
           labels: {
             colors: "var(--chart-colors-labels)",

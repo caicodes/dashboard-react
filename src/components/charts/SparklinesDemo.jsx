@@ -19,7 +19,9 @@ class SparklinesDemoChart extends Component {
             enabled: true,
           },
         },
-
+        markers: {
+          strokeColors: "transparent",
+        },
         stroke: {
           curve: "straight",
         },
@@ -63,6 +65,9 @@ class SparklinesDemoChart extends Component {
           sparkline: {
             enabled: true,
           },
+        },
+        markers: {
+          strokeColors: "transparent",
         },
         tooltip: {
           theme: "dark",
@@ -108,6 +113,9 @@ class SparklinesDemoChart extends Component {
             enabled: true,
           },
         },
+        markers: {
+          strokeColors: "transparent",
+        },
         stroke: {
           curve: "straight",
         },
@@ -138,6 +146,9 @@ class SparklinesDemoChart extends Component {
             color: "white",
           },
         },
+        tooltip: {
+          theme: "dark",
+        },
       },
 
       series1: [
@@ -153,6 +164,12 @@ class SparklinesDemoChart extends Component {
           sparkline: {
             enabled: true,
           },
+        },
+        stroke: {
+          width: 2,
+        },
+        markers: {
+          strokeColors: "transparent",
         },
         tooltip: {
           fixed: {
@@ -189,7 +206,15 @@ class SparklinesDemoChart extends Component {
             enabled: true,
           },
         },
+        colors: ["var(--chart-colors-lines-accent)"],
+        markers: {
+          strokeColors: "transparent",
+        },
+        stroke: {
+          width: 2,
+        },
         tooltip: {
+          theme: "dark",
           fixed: {
             enabled: false,
           },
@@ -206,7 +231,6 @@ class SparklinesDemoChart extends Component {
           marker: {
             show: false,
           },
-          theme: "dark",
         },
       },
 
@@ -406,155 +430,142 @@ class SparklinesDemoChart extends Component {
 
   render() {
     return (
-      <div>
-        <div class="row">
-          <div class="col-md-4">
-            <div id="chart-spark1">
-              <Chart
-                options={this.state.options}
-                series={this.state.series}
-                type="area"
-                height={160}
-              />
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div id="chart-spark2">
-              <Chart
-                options={this.state.optionsSpark2}
-                series={this.state.seriesSpark2}
-                type="area"
-                height={160}
-              />
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div id="chart-spark3">
-              <Chart
-                options={this.state.optionsSpark3}
-                series={this.state.seriesSpark3}
-                type="area"
-                height={160}
-              />
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <table>
-            <thead>
-              <th>Total Value</th>
-              <th>Percentage of Portfolio</th>
-              <th>Last 10 days</th>
-              <th>Volume</th>
-            </thead>
-            <tbody>
-              <tr>
-                <td>$32,554</td>
-                <td>15%</td>
-                <td>
-                  <div id="chart-1">
-                    <Chart
-                      options={this.state.options1}
-                      series={this.state.series1}
-                      type="line"
-                      height={35}
-                      width={100}
-                    />
-                  </div>
-                </td>
-                <td>
-                  <div id="chart-5">
-                    <Chart
-                      options={this.state.options5}
-                      series={this.state.series5}
-                      type="bar"
-                      height={35}
-                      width={100}
-                    />
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td>$23,533</td>
-                <td>7%</td>
-                <td>
-                  <div id="chart-2">
-                    <Chart
-                      options={this.state.options2}
-                      series={this.state.series2}
-                      type="line"
-                      height={35}
-                      width={100}
-                    />
-                  </div>
-                </td>
-                <td>
-                  <div id="chart-6">
-                    <Chart
-                      options={this.state.options6}
-                      series={this.state.series6}
-                      type="bar"
-                      height={35}
-                      width={100}
-                    />
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td>$54,276</td>
-                <td>9%</td>
-                <td>
-                  <div id="chart-3">
-                    <Chart
-                      options={this.state.options3}
-                      series={this.state.series3}
-                      type="pie"
-                      height={40}
-                      width={40}
-                    />
-                  </div>
-                </td>
-                <td>
-                  <div id="chart-7">
-                    <Chart
-                      options={this.state.options7}
-                      series={this.state.series7}
-                      type="radialBar"
-                      height={50}
-                      width={50}
-                    />
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td>$11,533</td>
-                <td>2%</td>
-                <td>
-                  <div id="chart-4">
-                    <Chart
-                      options={this.state.options4}
-                      series={this.state.series4}
-                      type="donut"
-                      height={40}
-                      width={40}
-                    />
-                  </div>
-                </td>
-                <td>
-                  <div id="chart-8">
-                    <Chart
-                      options={this.state.options8}
-                      series={this.state.series8}
-                      type="radialBar"
-                      height={40}
-                      width={40}
-                    />
-                  </div>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
+      <div className="grid grid-cols-3 gap-4">
+        <Chart
+          options={this.state.options}
+          series={this.state.series}
+          type="area"
+          height={160}
+        />
+
+        <Chart
+          options={this.state.optionsSpark2}
+          series={this.state.seriesSpark2}
+          type="area"
+          height={160}
+        />
+
+        <Chart
+          options={this.state.optionsSpark3}
+          series={this.state.seriesSpark3}
+          type="area"
+          height={160}
+        />
+
+        <table>
+          <thead>
+            <th>Total Value</th>
+            <th>Percentage of Portfolio</th>
+            <th>Last 10 days</th>
+            <th>Volume</th>
+          </thead>
+          <tbody>
+            <tr>
+              <td>$32,554</td>
+              <td>15%</td>
+              <td>
+                <div id="chart-1">
+                  <Chart
+                    options={this.state.options1}
+                    series={this.state.series1}
+                    type="line"
+                    height={35}
+                    width={100}
+                  />
+                </div>
+              </td>
+              <td>
+                <div id="chart-5">
+                  <Chart
+                    options={this.state.options5}
+                    series={this.state.series5}
+                    type="bar"
+                    height={35}
+                    width={100}
+                  />
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>$23,533</td>
+              <td>7%</td>
+              <td>
+                <div id="chart-2">
+                  <Chart
+                    options={this.state.options2}
+                    series={this.state.series2}
+                    type="line"
+                    height={35}
+                    width={100}
+                  />
+                </div>
+              </td>
+              <td>
+                <div id="chart-6">
+                  <Chart
+                    options={this.state.options6}
+                    series={this.state.series6}
+                    type="bar"
+                    height={35}
+                    width={100}
+                  />
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>$54,276</td>
+              <td>9%</td>
+              <td>
+                <div id="chart-3">
+                  <Chart
+                    options={this.state.options3}
+                    series={this.state.series3}
+                    type="pie"
+                    height={40}
+                    width={40}
+                  />
+                </div>
+              </td>
+              <td>
+                <div id="chart-7">
+                  <Chart
+                    options={this.state.options7}
+                    series={this.state.series7}
+                    type="radialBar"
+                    height={50}
+                    width={50}
+                  />
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>$11,533</td>
+              <td>2%</td>
+              <td>
+                <div id="chart-4">
+                  <Chart
+                    options={this.state.options4}
+                    series={this.state.series4}
+                    type="donut"
+                    height={40}
+                    width={40}
+                  />
+                </div>
+              </td>
+              <td>
+                <div id="chart-8">
+                  <Chart
+                    options={this.state.options8}
+                    series={this.state.series8}
+                    type="radialBar"
+                    height={40}
+                    width={40}
+                  />
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
       </div>
     )
   }

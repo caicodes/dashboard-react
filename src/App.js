@@ -9,6 +9,7 @@ import MultipleYAxisChart from "./components/charts/MultipleYAxisChart"
 import LineDataChart from "./components/charts/LineDataLabels"
 import Dashboard from "./components/Dashboard"
 import ScatterChart from "./components/charts/ScatterChart"
+import AreaChartAlt from "./components/charts/AreaChartAlt"
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
         <button className="btn btn-xl mt-8">hello daisyui</button>
       </header>
       <div>
+        <AreaChartAlt />
         <Dashboard />
         <ScatterChart />
       </div>
