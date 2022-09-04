@@ -12,9 +12,11 @@ Use the deploy link below to clone and deploy this project...
 
 ## keeping for now, mainly for future testing on this project
 
+## update
+
+branding design added, icon and icon package with manifest installed... 
 
 > original stuff below.. thinking of including tests... no other projects have them so far... for the portfolio, dashboard and testing... nice!
-
 
 
 This directory is a brief example of a [Create React App](https://github.com/facebook/create-react-app) site that can be deployed to Vercel with zero configuration.
