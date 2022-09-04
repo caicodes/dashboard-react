@@ -1,94 +1,71 @@
 import React from "react"
+import Logo from "./SvgLogo"
+import { FiActivity } from "react-icons/fi"
+import { AiOutlineRadarChart, AiOutlineDashboard } from "react-icons/ai"
+import { RiDatabaseLine } from "react-icons/ri"
+import { TbPhoneCalling } from "react-icons/tb"
 
 const Menu = () => {
-  const linksList = ["yo", "no", "yo"]
+  const linksList = [
+    "Southwest Central",
+    "Outside Sales Team",
+    "Watertown Servers",
+  ]
+  const linksList2 = [
+    "North Salt Lake / Ogden",
+    "South Salt Lake / Midvale",
+    "Lehi / Orem",
+    "Provo / Spanish Fork",
+  ]
   return (
     <div className="">
-      <h2 className="p-12 bg-base-200 w-96 ml-4 mt-4 rounded-box">
-        alpha dashboard
-      </h2>
-      <ul className="ml-4 mt-4  menu w-96 p-2 rounded-box">
-        <li>
-          <a href="/" className="menu-link">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="h-5 w-5"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"
-              />
-            </svg>
-            Item 2
-          </a>
-        </li>
-        <li>
-          <a href="/" className="menu-link">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="h-5 w-5"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-              />
-            </svg>
-            Item 1
-          </a>
-        </li>
-        <li>
-          <a href="/" className="menu-link">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="h-5 w-5"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"
-              />
-            </svg>
-            Item 3
-          </a>
-        </li>
+      <div className="p-8 mt-4">
+        <Logo />
+      </div>
+      <ul className="ml-5 mt-5  menu w-96 p-2 rounded-box">
+        <div className="uppercase text-sm mx-2 my-5">administration</div>
 
+        <li>
+          <a href="/" className="menu-link">
+            <AiOutlineDashboard className="h-5 w-5" />
+            Dashboard Main
+          </a>
+        </li>
+        <li>
+          <a href="/" className="menu-link">
+            <FiActivity className="h-5 w-5" />
+            Recent Activity
+          </a>
+        </li>
+        <li>
+          <a href="/" className="menu-link">
+            <AiOutlineRadarChart className="h-5 w-5" />
+            Sales by Quadrant Radar Charts
+          </a>
+        </li>
+        <div className="uppercase text-sm mx-2 my-5">data centers</div>
         {linksList.map((link) => (
           <li key={link}>
-            {" "}
             <a href="/" className="menu-link">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke-width="1.5"
-                stroke="currentColor"
-                class="w-6 h-6"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M7.5 14.25v2.25m3-4.5v4.5m3-6.75v6.75m3-9v9M6 20.25h12A2.25 2.25 0 0020.25 18V6A2.25 2.25 0 0018 3.75H6A2.25 2.25 0 003.75 6v12A2.25 2.25 0 006 20.25z"
-                />
-              </svg>
-
+              <RiDatabaseLine className="h-5 w-5" />
               {link}
             </a>
           </li>
         ))}
+        <div className="uppercase text-sm mx-2 my-5">call centers</div>
+        {linksList2.map((link) => (
+          <li key={link}>
+            <a href="/" className="menu-link">
+              <TbPhoneCalling className="h-5 w-5" />
+              {link}
+            </a>
+          </li>
+        ))}
+        <div className="h-12"></div>
+        <div class="indicator">
+          <span class="indicator-item badge badge-accent">99+</span>
+          <button class="btn">daily report updates</button>
+        </div>
       </ul>
     </div>
   )

@@ -1,6 +1,5 @@
 import AreaChartAlt from "./components/charts/AreaChartAlt"
 import AreaChart from "./components/charts/AreaChart"
-import SparklinesDemoChart from "./components/charts/SparklinesDemo"
 import Menu from "./components/app/Menu"
 
 function App() {
@@ -11,12 +10,7 @@ function App() {
       </div>
       <div className="m-8 col-span-4 md:col-span-3 overflow-y-scroll">
         <h2 className="bg-black/20 p-5 mb-4 uppercase text-sm text-accent">
-          comparison sales
-        </h2>
-
-        <SparklinesDemoChart />
-        <h2 className="bg-black/20 p-5 my-8 uppercase text-sm text-accent">
-          comparison sales
+          quarterly sales by retail category
         </h2>
 
         <AreaChartAlt />
