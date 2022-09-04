@@ -8,7 +8,6 @@ class AreaChartAlt extends Component {
     this.state = {
       options: {
         chart: {
-          height: 240,
           type: "area",
           stacked: false,
         },

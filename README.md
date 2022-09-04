@@ -1,4 +1,4 @@
-<img src='./project/status-screenshot.png' />
+<img src='./project/sept-22-update.png' />
 
 # Dashboard React from Create React App with D3
 

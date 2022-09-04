@@ -1,6 +1,7 @@
 import AreaChartAlt from "./components/charts/AreaChartAlt"
 import AreaChart from "./components/charts/AreaChart"
 import Menu from "./components/app/Menu"
+import LineChart from "./components/charts/LineColumnArea"
 
 function App() {
   return (
@@ -13,8 +14,9 @@ function App() {
           quarterly sales by retail category
         </h2>
 
-        <AreaChartAlt />
-        <div className="flex gap-4 p-8">
+        {/* <AreaChartAlt /> */}
+        <LineChart />
+        <div className="flex gap-4 py-8">
           <div className="w-2/3">
             <h2 className="bg-black/20 p-5 mb-4 uppercase text-sm text-accent">
               marketing channels

@@ -4,6 +4,7 @@ import { FiActivity } from "react-icons/fi"
 import { AiOutlineRadarChart, AiOutlineDashboard } from "react-icons/ai"
 import { RiDatabaseLine } from "react-icons/ri"
 import { TbPhoneCalling } from "react-icons/tb"
+import { VscSymbolClass } from "react-icons/vsc"
 
 const Menu = () => {
   const linksList = [
@@ -16,6 +17,14 @@ const Menu = () => {
     "South Salt Lake / Midvale",
     "Lehi / Orem",
     "Provo / Spanish Fork",
+  ]
+  const linksList3 = [
+    "Idaho Western Range",
+    "Wasatch Valley",
+    "Central East",
+    "Central West",
+    "Southwest Region",
+    "Northern California",
   ]
   return (
     <div className="">
@@ -57,6 +66,15 @@ const Menu = () => {
           <li key={link}>
             <a href="/" className="menu-link">
               <TbPhoneCalling className="h-5 w-5" />
+              {link}
+            </a>
+          </li>
+        ))}
+        <div className="uppercase text-sm mx-2 my-5">distribution channels</div>
+        {linksList3.map((link) => (
+          <li key={link}>
+            <a href="/" className="menu-link">
+              <VscSymbolClass className="h-5 w-5" />
               {link}
             </a>
           </li>
